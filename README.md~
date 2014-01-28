@@ -8,8 +8,8 @@ Página Personal escrita en Django - Python
 
 Requirements:
 
-Django == 1.6.1
-Python == 2.7.+
+- Django == 1.6.1
+- Python == 2.7.+
 
 ==============================================
 autor: Alex Dzul
