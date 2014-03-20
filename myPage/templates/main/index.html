@@ -2,6 +2,9 @@
 {% load staticfiles %}
 {% block title%}Welcome {% endblock %}
 {% block body %}
-    <h1>Alex Dzul</h1>
-    <img src="{% static "img/wall.jpg" %}"/>
+    <h1>{{ settings.my_name }}</h1>
+    <img src="/media/{{ settings.background }}"/>
+    {% for net in networks %}
+        <a href="{{ net.url }}" target="_blank"><img src="/media/{{ net.icon }}" title="{{ net.name }}" width="50px" height="50px"></a>
+    {% endfor %}
 {% endblock %}

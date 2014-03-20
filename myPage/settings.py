@@ -1,4 +1,3 @@
-
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
@@ -20,6 +19,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myPage.apps.main',
+    'myPage.apps.social',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -52,6 +53,10 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'myPage/media')
 
 
 STATIC_URL = '/static/'
