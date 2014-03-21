@@ -3,8 +3,8 @@
 {% block title%}Welcome {% endblock %}
 {% block body %}
     <h1>{{ settings.my_name }}</h1>
-    <img src="/media/{{ settings.background }}"/>
+    <img src="{{ MEDIA_URL }}{{ settings.background }}"/>
     {% for net in networks %}
-        <a href="{{ net.url }}" target="_blank"><img src="/media/{{ net.icon }}" title="{{ net.name }}" width="50px" height="50px"></a>
+        <p><a href="{{ net.url }}" target="_blank"><img src="{{ MEDIA_URL }}{{ net.icon }}" title="{{ net.name }}" width="50px" height="50px"></a></p>
     {% endfor %}
 {% endblock %}
