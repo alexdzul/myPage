@@ -1,0 +1,42 @@
+body {
+    background-attachment: fixed;
+    background-image: url(../img/wall.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#social a{
+    display: inline-block;
+    float: left;
+    margin-right: 1%;
+    margin-top: 35%;
+}
+
+h1{
+    color:white;
+    font-size: 56px;
+    float: right;
+    margin-right: 10%;
+}
+
+p{
+    color:white;
+    font-size: 20px;
+    float: right;
+    margin-top:7%;
+    margin-right: -15.5%;
+}
+
+#info{
+    float: right;
+    margin-right: -17.5%;
+    margin-top: 9.5%;
+    background: rgba(0,0,0,0.7);
+	width: 400px;
+	height:auto;
+	color:white;
+    text-align: right;
+	font-size: 16px;
+	padding:10px;
+	padding-bottom: 40px;
+}
